@@ -4,7 +4,7 @@
 <div align="center">
 
 <a href="https://alierdem.dev">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=3200&pause=900&color=71B280&center=true&vCenter=true&width=560&lines=Merhaba%2C+ben+Ali+%F0%9F%91%8B;Karbonify'%C4%B1n+ortak+kurucusuyum+%F0%9F%8C%B1;PHP+%E2%80%A2+JavaScript+%E2%80%A2+MariaDB+%E2%80%A2+Docker;Kod+yaz%2C+karbonu+azalt." alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=3200&pause=900&color=71B280&center=true&vCenter=true&width=560&lines=Merhaba%2C+ben+Ali+%F0%9F%91%8B;Karbonify'%C4%B1+in%C5%9Fa+ediyoruz+%F0%9F%8C%B1;PHP+%E2%80%A2+JavaScript+%E2%80%A2+MariaDB+%E2%80%A2+Docker;Kod+yaz%2C+karbonu+azalt." alt="Typing SVG" />
 </a>
 
 <br/>
