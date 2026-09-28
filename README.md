@@ -26,8 +26,6 @@
 - 📸 **Eco-foto** — fotoğraf doğrulama, moderasyon kuyruğu ve yönetim paneli
 - 🔔 **PWA** — web push bildirimleri, mobil öncelikli arayüz
 
-<sub>🔒 Kaynak kodu gizli bir depoda geliştiriliyor.</sub>
-
 ---
 
 ### 🛠️ Teknolojiler
