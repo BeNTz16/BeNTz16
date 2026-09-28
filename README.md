@@ -1,10 +1,10 @@
 <!-- Header -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:134e5e,100:71b280&height=200&section=header&text=Ali%20Erdem&fontSize=52&fontColor=ffffff&fontAlignY=38&desc=Full-Stack%20Developer%20%E2%80%A2%20Karbonify&descAlignY=58&descSize=18&animation=fadeIn" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:134e5e,100:71b280&height=200&section=header&text=Ali%20Erdem&fontSize=52&fontColor=ffffff&fontAlignY=38&desc=Karbonify%20Ortak%20Kurucusu%20%E2%80%A2%20Full-Stack%20Developer&descAlignY=58&descSize=18&animation=fadeIn" />
 
 <div align="center">
 
 <a href="https://alierdem.dev">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=3200&pause=900&color=71B280&center=true&vCenter=true&width=560&lines=Merhaba%2C+ben+Ali+%F0%9F%91%8B;Karbonify'%C4%B1+geli%C5%9Ftiriyorum+%F0%9F%8C%B1;PHP+%E2%80%A2+JavaScript+%E2%80%A2+MariaDB+%E2%80%A2+Docker;Kod+yaz%2C+karbonu+azalt." alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=3200&pause=900&color=71B280&center=true&vCenter=true&width=560&lines=Merhaba%2C+ben+Ali+%F0%9F%91%8B;Karbonify'%C4%B1n+ortak+kurucusuyum+%F0%9F%8C%B1;PHP+%E2%80%A2+JavaScript+%E2%80%A2+MariaDB+%E2%80%A2+Docker;Kod+yaz%2C+karbonu+azalt." alt="Typing SVG" />
 </a>
 
 <br/>
@@ -18,7 +18,7 @@
 
 ### 🌱 Karbonify
 
-> Karbon ayak izini hesaplayan, çevre dostu eylemleri **oyunlaştıran** sosyal platform.
+> **Ortak kurucusu** olduğum Karbonify; karbon ayak izini hesaplayan, çevre dostu eylemleri **oyunlaştıran** sosyal bir platform.
 
 - 🗺️ **Harita** — geri dönüşüm kutuları, kirli bölgeler ve konum tabanlı görevler
 - 🤝 **Etkinlikler** — temizlik buluşmaları, katılım/check-in, etkinlik odaları ve galeri
