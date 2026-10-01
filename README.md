@@ -46,21 +46,5 @@
 
 </div>
 
-<details><summary><b>🇹🇷 Türkçe</b></summary>
-
-Merhaba, ben Ali 👋 Karbonify'ın ortak kurucusuyum.
-
-### 🌱 Karbonify
-
-> **Ortak kurucusu** olduğum Karbonify; karbon ayak izini hesaplayan, çevre dostu eylemleri **oyunlaştıran** sosyal bir platform.
-
-- 🗺️ **Harita** — geri dönüşüm kutuları, kirli bölgeler ve konum tabanlı görevler
-- 🤝 **Etkinlikler** — temizlik buluşmaları, katılım/check-in, etkinlik odaları ve galeri
-- 🏆 **Oyunlaştırma** — XP, günlük görevler, seriler (streak), ligler ve liderlik tablosu
-- 📸 **Eco-foto** — fotoğraf doğrulama, moderasyon kuyruğu ve yönetim paneli
-- 🔔 **PWA** — web push bildirimleri, mobil öncelikli arayüz
-
-</details>
-
 <!-- Footer -->
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:71b280,50:134e5e,100:0f2027&height=110&section=footer" />
