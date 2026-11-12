@@ -22,8 +22,8 @@
     </filter>
   </defs>
   <style>
-    .script{font-family:'Palatino Linotype','Book Antiqua',Palatino,'URW Palladio L',Georgia,serif}
-    .h{font-size:32px;font-variant:small-caps;letter-spacing:4px;fill:#3b2a1a;stroke:#3b2a1a;stroke-width:.5;stroke-dasharray:500;stroke-dashoffset:0;animation:draw 2.4s ease-in-out .2s both,ink 1s ease-in 1.5s both}
+    .script{font-family:'Segoe Script','Snell Roundhand','Apple Chancery','Lucida Handwriting','URW Chancery L',cursive}
+    .h{font-size:38px;fill:#3b2a1a;stroke:#3b2a1a;stroke-width:.8;stroke-dasharray:500;stroke-dashoffset:0;animation:draw 2.4s ease-in-out .2s both,ink 1s ease-in 1.5s both}
     .side{fill:none;stroke:#8a6a3a;stroke-width:1.5;stroke-linecap:round;stroke-dasharray:200;stroke-dashoffset:0;animation:line 1.4s ease-out 1.6s both}
     .st{transform-box:fill-box;transform-origin:center;animation:stamp .4s cubic-bezier(.3,1.5,.5,1) both,reink 11s ease-in-out infinite}
     .st rect{fill:none;stroke:currentColor}

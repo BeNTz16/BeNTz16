@@ -22,8 +22,9 @@
     </filter>
   </defs>
   <style>
-    .script,.serif{font-family:'Palatino Linotype','Book Antiqua',Palatino,'URW Palladio L',Georgia,serif}
-    .name{font-size:66px;font-variant:small-caps;letter-spacing:6px;fill:#3b2a1a;stroke:#3b2a1a;stroke-width:.7;stroke-linejoin:round;stroke-dasharray:900;stroke-dashoffset:0;
+    .script{font-family:'Segoe Script','Snell Roundhand','Apple Chancery','Lucida Handwriting','URW Chancery L',cursive}
+    .serif{font-family:'Palatino Linotype','Book Antiqua',Palatino,'URW Palladio L',Georgia,serif}
+    .name{font-size:82px;fill:#3b2a1a;stroke:#3b2a1a;stroke-width:1.1;stroke-linejoin:round;stroke-dasharray:900;stroke-dashoffset:0;
       animation:draw 3.2s ease-in-out .3s both,ink 1.4s ease-in 2.3s both}
     .flourish{fill:none;stroke:#8a6a3a;stroke-width:1.6;stroke-linecap:round;stroke-dasharray:260;stroke-dashoffset:0;animation:line 1.6s ease-out 3.2s both}
     .gem{fill:#b0812f;animation:fade .6s ease-out 3.1s both}
@@ -59,11 +60,11 @@
   <path class="flourish" d="M412 196C450 196 478 186 516 196S564 206 572 194S558 182 552 192"/>
   <path class="gem" d="M400 189l7 7-7 7-7-7z"/>
 
-  <text class="serif sub" x="400" y="234" text-anchor="middle">Co-founder @ Karbonify  •  Full-Stack Developer</text>
+  <text class="serif sub" x="400" y="234" text-anchor="middle">Co-founder of Karbonify  •  Full-Stack Developer</text>
 
   <g class="serif" text-anchor="middle">
-    <text class="rot r1" x="400" y="268">Hi, I'm Ali</text>
-    <text class="rot r2" x="400" y="268">Building Karbonify</text>
+    <text class="rot r1" x="400" y="268">Building software that makes sustainable habits measurable.</text>
+    <text class="rot r2" x="400" y="268">Co-founding and engineering Karbonify</text>
     <text class="rot r3" x="400" y="268">PHP  •  JavaScript  •  MariaDB  •  Docker</text>
     <text class="rot r4" x="400" y="268">Coding for one more breath tomorrow.</text>
   </g>
