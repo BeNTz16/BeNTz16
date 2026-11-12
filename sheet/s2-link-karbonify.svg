@@ -3,14 +3,14 @@
     <linearGradient id="pg" gradientUnits="userSpaceOnUse" x1="-384" y1="0" x2="384" y2="0">
       <stop offset="0" stop-color="#dcc592"/><stop offset=".07" stop-color="#e9d7ab"/><stop offset=".5" stop-color="#f0e2bd"/><stop offset=".93" stop-color="#e9d7ab"/><stop offset="1" stop-color="#dcc592"/>
     </linearGradient>
-    <filter id="paper" filterUnits="userSpaceOnUse" x="0" y="0" width="400" height="96" color-interpolation-filters="sRGB">
+    <filter id="paper" filterUnits="userSpaceOnUse" x="-8" y="-8" width="416" height="112" color-interpolation-filters="sRGB">
       <feTurbulence type="fractalNoise" baseFrequency=".8" numOctaves="2" seed="9" result="fine"/>
       <feColorMatrix in="fine" type="matrix" values="0 0 0 0 0.36  0 0 0 0 0.25  0 0 0 0 0.12  0.9 0 0 0 -0.30" result="speck"/>
       <feComposite in="speck" in2="SourceAlpha" operator="in" result="texIn"/>
       <feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="texIn"/></feMerge>
     </filter>
-    <filter id="edge-burn" filterUnits="userSpaceOnUse" x="0" y="0" width="400" height="96"><feGaussianBlur stdDeviation="2.5"/></filter>
-    <clipPath id="paper-clip"><path d="M0 0 L384 0 L381 16 L388 32 L378 48 L386 64 L391 80 L384 96 L0 96 Z"/></clipPath>
+    <filter id="edge-burn" filterUnits="userSpaceOnUse" x="-8" y="-8" width="416" height="112"><feGaussianBlur stdDeviation="2.5"/></filter>
+    <clipPath id="paper-clip"><path d="M-6 -6 L384 -6 L384 0 L381 16 L388 32 L378 48 L386 64 L391 80 L384 96 L384 102 L-6 102 L-6 96 L0 96 L0 0 L-6 0 Z"/></clipPath>
   </defs>
   <style>
     .serif{font-family:'Palatino Linotype','Book Antiqua',Palatino,'URW Palladio L',Georgia,serif}
@@ -20,7 +20,7 @@
     @keyframes u{0%{stroke-dashoffset:170}30%,85%{stroke-dashoffset:0;opacity:1}100%{stroke-dashoffset:0;opacity:0}}
     @media (prefers-reduced-motion:reduce){*{animation:none!important}}
   </style>
-  <path id="paper-shape" d="M0 0 L384 0 L381 16 L388 32 L378 48 L386 64 L391 80 L384 96 L0 96 Z" fill="url(#pg)" filter="url(#paper)"/>
+  <path id="paper-shape" d="M-6 -6 L384 -6 L384 0 L381 16 L388 32 L378 48 L386 64 L391 80 L384 96 L384 102 L-6 102 L-6 96 L0 96 L0 0 L-6 0 Z" fill="url(#pg)" filter="url(#paper)"/>
   <g clip-path="url(#paper-clip)">
     <path d="M384 0 L381 16 L388 32 L378 48 L386 64 L391 80 L384 96" fill="none" stroke="#6b3f14" stroke-opacity=".35" stroke-width="5" filter="url(#edge-burn)"/>
   </g>
