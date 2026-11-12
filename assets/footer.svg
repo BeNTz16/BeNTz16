@@ -22,12 +22,11 @@
     </filter>
   </defs>
   <style>
-    .script{font-family:'Segoe Script','Snell Roundhand','Apple Chancery','Lucida Handwriting','URW Chancery L',cursive}
-    .serif{font-family:'Palatino Linotype','Book Antiqua',Palatino,'URW Palladio L',Georgia,serif}
+    .script,.serif{font-family:'Palatino Linotype','Book Antiqua',Palatino,'URW Palladio L',Georgia,serif}
     .q{font-size:22px;font-style:italic;fill:#5a3f24}
     .flourish{fill:none;stroke:#8a6a3a;stroke-width:1.6;stroke-linecap:round;stroke-dasharray:260;stroke-dashoffset:0;animation:line 10s ease-in-out infinite both}
     .gem{fill:#b0812f}
-    .sig{font-size:36px;fill:#7a1f1f;stroke:#7a1f1f;stroke-width:.8;stroke-dasharray:400;stroke-dashoffset:0;animation:sig 10s ease-in-out infinite both}
+    .sig{font-size:26px;font-style:italic;letter-spacing:1px;fill:#7a1f1f;stroke:#7a1f1f;stroke-width:.4;stroke-dasharray:400;stroke-dashoffset:0;animation:sig 10s ease-in-out infinite both}
     @keyframes line{0%{stroke-dashoffset:260;opacity:1}18%,90%{stroke-dashoffset:0;opacity:1}100%{stroke-dashoffset:0;opacity:0}}
     @keyframes sig{0%,12%{stroke-dashoffset:400;fill-opacity:0;stroke-opacity:1}34%{stroke-dashoffset:0;fill-opacity:0}44%,90%{stroke-dashoffset:0;fill-opacity:1;stroke-opacity:1}100%{stroke-dashoffset:0;fill-opacity:0;stroke-opacity:0}}
     @media (prefers-reduced-motion:reduce){*{animation:none!important}}
