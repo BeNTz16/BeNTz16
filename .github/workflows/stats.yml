@@ -24,10 +24,19 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Build stats parchment
-        run: mkdir -p dist && node scripts/build-stats.mjs --user "${{ github.repository_owner }}" --out dist/s5b-stats.svg
+        run: |
+          mkdir -p dist
+          node scripts/build-stats.mjs --user "${{ github.repository_owner }}" --out dist/s5b-stats.svg
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Push stats to output branch
-        run: cd dist && git init -q -b output && git config user.name "github-actions[bot]" && git config user.email "41898282+github-actions[bot]@users.noreply.github.com" && git add . && git commit -qm "stats: update" && git push -f "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" output
+        run: |
+          cd dist
+          git init -q -b output
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -qm "stats: update"
+          git push -f "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" output
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
