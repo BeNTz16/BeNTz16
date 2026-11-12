@@ -26,7 +26,7 @@ jobs:
       - name: Build stats parchment
         run: |
           mkdir -p dist
-          node scripts/build-stats.mjs --user "${{ github.repository_owner }}" --out dist/s5b-stats.svg
+          node scripts/build-stats.mjs --user "${{ github.repository_owner }}" --today "$(TZ=Europe/Istanbul date +%F)" --out dist/s5b-stats.svg
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Push stats to output branch
