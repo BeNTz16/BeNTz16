@@ -1,25 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" lang="en" xml:lang="en" viewBox="0 0 800 560" width="800" height="560" role="img" aria-label="Karbonify — a social platform that calculates carbon footprints and gamifies eco-friendly actions">
+<svg xmlns="http://www.w3.org/2000/svg" lang="en" xml:lang="en" viewBox="0 0 800 620" width="800" height="620" role="img" aria-label="Karbonify — a social platform that calculates carbon footprints and gamifies eco-friendly actions">
   <defs>
-    <linearGradient id="pg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#f4e7c6"/>
-      <stop offset=".55" stop-color="#ecdbb2"/>
-      <stop offset="1" stop-color="#e0c996"/>
+    <linearGradient id="pg" gradientUnits="userSpaceOnUse" x1="16" y1="0" x2="784" y2="0">
+      <stop offset="0" stop-color="#dcc592"/><stop offset=".07" stop-color="#e9d7ab"/><stop offset=".5" stop-color="#f0e2bd"/><stop offset=".93" stop-color="#e9d7ab"/><stop offset="1" stop-color="#dcc592"/>
     </linearGradient>
-    <radialGradient id="burn" cx=".5" cy=".5" r=".74">
-      <stop offset=".64" stop-color="#7a4f1e" stop-opacity="0"/>
-      <stop offset="1" stop-color="#6b3f14" stop-opacity=".42"/>
-    </radialGradient>
-    <filter id="paper" x="-5%" y="-6%" width="110%" height="112%" color-interpolation-filters="sRGB">
-      <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="3" seed="12" result="warp"/>
-      <feDisplacementMap in="SourceGraphic" in2="warp" scale="10" xChannelSelector="R" yChannelSelector="G" result="sheet"/>
-      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" seed="5" result="fine"/>
+    <filter id="paper" filterUnits="userSpaceOnUse" x="0" y="0" width="800" height="620" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency=".8" numOctaves="2" seed="9" result="fine"/>
       <feColorMatrix in="fine" type="matrix" values="0 0 0 0 0.36  0 0 0 0 0.25  0 0 0 0 0.12  0.9 0 0 0 -0.30" result="speck"/>
-      <feTurbulence type="fractalNoise" baseFrequency="0.01" numOctaves="2" seed="33" result="blot"/>
-      <feColorMatrix in="blot" type="matrix" values="0 0 0 0 0.48  0 0 0 0 0.30  0 0 0 0 0.10  0.85 0 0 0 -0.36" result="stain"/>
-      <feMerge result="tex"><feMergeNode in="stain"/><feMergeNode in="speck"/></feMerge>
-      <feComposite in="tex" in2="sheet" operator="in" result="texIn"/>
-      <feMerge><feMergeNode in="sheet"/><feMergeNode in="texIn"/></feMerge>
+      <feComposite in="speck" in2="SourceAlpha" operator="in" result="texIn"/>
+      <feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="texIn"/></feMerge>
     </filter>
+    <filter id="edge-burn" filterUnits="userSpaceOnUse" x="0" y="0" width="800" height="620"><feGaussianBlur stdDeviation="2.5"/></filter>
+    <clipPath id="paper-clip"><path d="M16 0 L13 16 L18 22 L47 25 L63 23 L82 29 L103 27 L121 32 L144 30 L166 35 L190 34 L215 38 L250 40 L221 43 L198 42 L176 47 L150 45 L130 51 L106 48 L85 55 L60 52 L42 58 L19 56 L14 72 L16 88 L13 104 L20 120 L10 136 L18 152 L23 168 L14 184 L21 200 L11 216 L17 232 L9 248 L19 264 L13 280 L20 296 L10 312 L18 328 L23 344 L14 360 L21 376 L11 392 L17 408 L9 424 L19 440 L13 456 L20 472 L10 488 L18 504 L23 520 L14 536 L21 552 L11 568 L17 584 L9 600 L16 620 L784 620 L784 620 L791 608 L786 592 L778 576 L788 560 L781 544 L787 528 L777 512 L785 496 L779 480 L789 464 L782 448 L791 432 L786 416 L778 400 L788 384 L781 368 L787 352 L777 336 L785 320 L779 304 L789 288 L782 272 L791 256 L786 240 L778 224 L788 208 L781 192 L787 176 L777 160 L785 144 L779 128 L789 112 L782 96 L791 80 L786 64 L778 48 L788 32 L781 16 L784 0 Z"/></clipPath>
   </defs>
   <style>
     .script{font-family:'Segoe Script','Snell Roundhand','Apple Chancery','Lucida Handwriting','URW Chancery L',cursive}
@@ -44,11 +35,14 @@
     @keyframes sway{0%,100%{transform:rotate(-5deg)}50%{transform:rotate(5deg)}}
     @media (prefers-reduced-motion:reduce){*{animation:none!important}}
   </style>
-
-  <g filter="url(#paper)">
-    <rect x="16" y="16" width="768" height="528" rx="5" fill="url(#pg)"/>
-    <rect x="16" y="16" width="768" height="528" rx="5" fill="url(#burn)"/>
+  <path id="paper-shape" d="M16 0 L13 16 L18 22 L47 25 L63 23 L82 29 L103 27 L121 32 L144 30 L166 35 L190 34 L215 38 L250 40 L221 43 L198 42 L176 47 L150 45 L130 51 L106 48 L85 55 L60 52 L42 58 L19 56 L14 72 L16 88 L13 104 L20 120 L10 136 L18 152 L23 168 L14 184 L21 200 L11 216 L17 232 L9 248 L19 264 L13 280 L20 296 L10 312 L18 328 L23 344 L14 360 L21 376 L11 392 L17 408 L9 424 L19 440 L13 456 L20 472 L10 488 L18 504 L23 520 L14 536 L21 552 L11 568 L17 584 L9 600 L16 620 L784 620 L784 620 L791 608 L786 592 L778 576 L788 560 L781 544 L787 528 L777 512 L785 496 L779 480 L789 464 L782 448 L791 432 L786 416 L778 400 L788 384 L781 368 L787 352 L777 336 L785 320 L779 304 L789 288 L782 272 L791 256 L786 240 L778 224 L788 208 L781 192 L787 176 L777 160 L785 144 L779 128 L789 112 L782 96 L791 80 L786 64 L778 48 L788 32 L781 16 L784 0 Z" fill="url(#pg)" filter="url(#paper)"/>
+  <g clip-path="url(#paper-clip)">
+    <path d="M16 0 L13 16 L18 22 L47 25 L63 23 L82 29 L103 27 L121 32 L144 30 L166 35 L190 34 L215 38 L250 40 L221 43 L198 42 L176 47 L150 45 L130 51 L106 48 L85 55 L60 52 L42 58 L19 56 L14 72 L16 88 L13 104 L20 120 L10 136 L18 152 L23 168 L14 184 L21 200 L11 216 L17 232 L9 248 L19 264 L13 280 L20 296 L10 312 L18 328 L23 344 L14 360 L21 376 L11 392 L17 408 L9 424 L19 440 L13 456 L20 472 L10 488 L18 504 L23 520 L14 536 L21 552 L11 568 L17 584 L9 600 L16 620 M784 0 L781 16 L788 32 L778 48 L786 64 L791 80 L782 96 L789 112 L779 128 L785 144 L777 160 L787 176 L781 192 L788 208 L778 224 L786 240 L791 256 L782 272 L789 288 L779 304 L785 320 L777 336 L787 352 L781 368 L788 384 L778 400 L786 416 L791 432 L782 448 L789 464 L779 480 L785 496 L777 512 L787 528 L781 544 L788 560 L778 576 L786 592 L791 608 L784 620" fill="none" stroke="#6b3f14" stroke-opacity=".35" stroke-width="5" filter="url(#edge-burn)"/>
+    <path d="M18 22 L47 25 L63 23 L82 29 L103 27 L121 32 L144 30 L166 35 L190 34 L215 38 L250 40 L221 43 L198 42 L176 47 L150 45 L130 51 L106 48 L85 55 L60 52 L42 58 L19 56" fill="none" stroke="#5a3413" stroke-opacity=".55" stroke-width="1.4"/>
   </g>
+  <g transform="translate(0,60)">
+
+  
 
   <g transform="translate(92 96)">
     <g class="sprout" fill="#4f6b3a" stroke="#3d5430" stroke-width="1.2" stroke-linejoin="round">
@@ -92,5 +86,6 @@
       <text class="lab" x="108" y="495">Progressive Web App</text>
       <text class="d" x="108" y="520">Mobile-first interface with web push notifications</text>
     </g>
+  </g>
   </g>
 </svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 170" width="800" height="170" role="img" aria-label="Coding for one more breath tomorrow. — Ali">
+  <defs>
+    <linearGradient id="pg" gradientUnits="userSpaceOnUse" x1="16" y1="0" x2="784" y2="0">
+      <stop offset="0" stop-color="#dcc592"/><stop offset=".07" stop-color="#e9d7ab"/><stop offset=".5" stop-color="#f0e2bd"/><stop offset=".93" stop-color="#e9d7ab"/><stop offset="1" stop-color="#dcc592"/>
+    </linearGradient>
+    <filter id="paper" filterUnits="userSpaceOnUse" x="0" y="0" width="800" height="170" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency=".8" numOctaves="2" seed="9" result="fine"/>
+      <feColorMatrix in="fine" type="matrix" values="0 0 0 0 0.36  0 0 0 0 0.25  0 0 0 0 0.12  0.9 0 0 0 -0.30" result="speck"/>
+      <feComposite in="speck" in2="SourceAlpha" operator="in" result="texIn"/>
+      <feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="texIn"/></feMerge>
+    </filter>
+    <filter id="edge-burn" filterUnits="userSpaceOnUse" x="0" y="0" width="800" height="170"><feGaussianBlur stdDeviation="2.5"/></filter>
+    <clipPath id="paper-clip"><path d="M16 14 L10 30 L20 46 L13 62 L23 78 L12 94 L19 110 L9 126 L21 142 L16 156 L34 152 L53 159 L73 153 L93 157 L114 151 L134 158 L155 154 L176 160 L196 153 L217 157 L238 150 L259 158 L280 154 L301 159 L322 151 L343 156 L364 152 L385 159 L406 154 L427 158 L448 150 L469 156 L490 153 L511 160 L532 154 L553 158 L574 151 L595 157 L616 153 L637 159 L658 152 L679 157 L700 151 L721 159 L742 153 L763 158 L784 156 L789 142 L781 126 L791 110 L786 94 L777 78 L788 62 L779 46 L790 30 L784 14 L769 11 L750 15 L730 9 L709 16 L688 12 L667 17 L646 10 L625 16 L604 12 L583 18 L562 11 L541 15 L521 9 L501 16 L480 12 L460 17 L439 10 L418 16 L396 12 L376 18 L355 11 L334 15 L314 9 L294 16 L272 12 L251 17 L230 10 L210 16 L189 12 L168 18 L149 11 L129 15 L108 9 L88 16 L69 12 L51 17 L33 10 Z" fill-rule="evenodd" clip-rule="evenodd"/></clipPath>
+  </defs>
+  <style>
+    .script{font-family:'Segoe Script','Snell Roundhand','Apple Chancery','Lucida Handwriting','URW Chancery L',cursive}
+    .serif{font-family:'Palatino Linotype','Book Antiqua',Palatino,'URW Palladio L',Georgia,serif}
+    .q{font-size:22px;font-style:italic;fill:#5a3f24}
+    .flourish{fill:none;stroke:#8a6a3a;stroke-width:1.6;stroke-linecap:round;stroke-dasharray:260;stroke-dashoffset:0;animation:line 10s ease-in-out infinite both}
+    .gem{fill:#b0812f}
+    .sig{font-size:36px;fill:#7a1f1f;stroke:#7a1f1f;stroke-width:.8;stroke-dasharray:400;stroke-dashoffset:0;animation:sig 10s ease-in-out infinite both}
+    @keyframes line{0%{stroke-dashoffset:260;opacity:1}18%,90%{stroke-dashoffset:0;opacity:1}100%{stroke-dashoffset:0;opacity:0}}
+    @keyframes sig{0%,12%{stroke-dashoffset:400;fill-opacity:0;stroke-opacity:1}34%{stroke-dashoffset:0;fill-opacity:0}44%,90%{stroke-dashoffset:0;fill-opacity:1;stroke-opacity:1}100%{stroke-dashoffset:0;fill-opacity:0;stroke-opacity:0}}
+    @media (prefers-reduced-motion:reduce){*{animation:none!important}}
+  </style>
+  <path id="paper-shape" d="M16 14 L10 30 L20 46 L13 62 L23 78 L12 94 L19 110 L9 126 L21 142 L16 156 L34 152 L53 159 L73 153 L93 157 L114 151 L134 158 L155 154 L176 160 L196 153 L217 157 L238 150 L259 158 L280 154 L301 159 L322 151 L343 156 L364 152 L385 159 L406 154 L427 158 L448 150 L469 156 L490 153 L511 160 L532 154 L553 158 L574 151 L595 157 L616 153 L637 159 L658 152 L679 157 L700 151 L721 159 L742 153 L763 158 L784 156 L789 142 L781 126 L791 110 L786 94 L777 78 L788 62 L779 46 L790 30 L784 14 L769 11 L750 15 L730 9 L709 16 L688 12 L667 17 L646 10 L625 16 L604 12 L583 18 L562 11 L541 15 L521 9 L501 16 L480 12 L460 17 L439 10 L418 16 L396 12 L376 18 L355 11 L334 15 L314 9 L294 16 L272 12 L251 17 L230 10 L210 16 L189 12 L168 18 L149 11 L129 15 L108 9 L88 16 L69 12 L51 17 L33 10 Z" fill-rule="evenodd" fill="url(#pg)" filter="url(#paper)"/>
+  <g clip-path="url(#paper-clip)">
+    <path d="M16 14 L10 30 L20 46 L13 62 L23 78 L12 94 L19 110 L9 126 L21 142 L16 156 M784 14 L790 30 L779 46 L788 62 L777 78 L786 94 L791 110 L781 126 L789 142 L784 156 M16 156 L34 152 L53 159 L73 153 L93 157 L114 151 L134 158 L155 154 L176 160 L196 153 L217 157 L238 150 L259 158 L280 154 L301 159 L322 151 L343 156 L364 152 L385 159 L406 154 L427 158 L448 150 L469 156 L490 153 L511 160 L532 154 L553 158 L574 151 L595 157 L616 153 L637 159 L658 152 L679 157 L700 151 L721 159 L742 153 L763 158 L784 156 M16 14 L33 10 L51 17 L69 12 L88 16 L108 9 L129 15 L149 11 L168 18 L189 12 L210 16 L230 10 L251 17 L272 12 L294 16 L314 9 L334 15 L355 11 L376 18 L396 12 L418 16 L439 10 L460 17 L480 12 L501 16 L521 9 L541 15 L562 11 L583 18 L604 12 L625 16 L646 10 L667 17 L688 12 L709 16 L730 9 L750 15 L769 11 L784 14" fill="none" stroke="#6b3f14" stroke-opacity=".35" stroke-width="5" filter="url(#edge-burn)"/>
+  </g>
+  <g transform="translate(0,0)">
+  <text class="serif q" x="400" y="66" text-anchor="middle">“Coding for one more breath tomorrow.”</text>
+  <path class="flourish" d="M388 92C350 92 322 82 284 92S236 102 228 90S242 78 248 88"/>
+  <path class="flourish" d="M412 92C450 92 478 82 516 92S564 102 572 90S558 78 552 88"/>
+  <path class="gem" d="M400 85l7 7-7 7-7-7z"/>
+  <text class="script sig" x="660" y="128" text-anchor="middle">— Ali</text>
+  </g>
+</svg>

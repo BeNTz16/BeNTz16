@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" lang="en" xml:lang="en" viewBox="0 0 800 330" width="800" height="330" role="img" aria-label="Ali Erdem — Co-founder @ Karbonify, Full-Stack Developer">
+  <defs>
+    <linearGradient id="pg" gradientUnits="userSpaceOnUse" x1="16" y1="0" x2="784" y2="0">
+      <stop offset="0" stop-color="#dcc592"/><stop offset=".07" stop-color="#e9d7ab"/><stop offset=".5" stop-color="#f0e2bd"/><stop offset=".93" stop-color="#e9d7ab"/><stop offset="1" stop-color="#dcc592"/>
+    </linearGradient>
+    <filter id="paper" filterUnits="userSpaceOnUse" x="0" y="0" width="800" height="330" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency=".8" numOctaves="2" seed="9" result="fine"/>
+      <feColorMatrix in="fine" type="matrix" values="0 0 0 0 0.36  0 0 0 0 0.25  0 0 0 0 0.12  0.9 0 0 0 -0.30" result="speck"/>
+      <feComposite in="speck" in2="SourceAlpha" operator="in" result="texIn"/>
+      <feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="texIn"/></feMerge>
+    </filter>
+    <filter id="edge-burn" filterUnits="userSpaceOnUse" x="0" y="0" width="800" height="330"><feGaussianBlur stdDeviation="2.5"/></filter>
+    <clipPath id="paper-clip"><path d="M16 14 L32 11 L48 17 L64 10 L80 16 L96 13 L112 19 L128 12 L144 15 L160 9 L176 16 L192 12 L208 18 L224 14 L240 11 L256 17 L272 10 L288 16 L304 13 L320 19 L336 12 L352 15 L368 9 L384 16 L400 12 L416 18 L432 14 L448 11 L464 17 L480 10 L496 16 L512 13 L528 19 L544 12 L560 15 L576 9 L592 16 L608 12 L624 18 L640 14 L656 11 L672 17 L688 10 L704 16 L720 13 L736 19 L752 12 L768 15 L784 14 L784 14 L781 30 L788 46 L778 62 L786 78 L791 94 L782 110 L789 126 L779 142 L785 158 L777 174 L787 190 L781 206 L788 222 L778 238 L786 254 L791 270 L782 286 L789 302 L779 318 L784 330 L16 330 L16 330 L11 318 L21 302 L14 286 L23 270 L18 254 L10 238 L20 222 L13 206 L19 190 L9 174 L17 158 L11 142 L21 126 L14 110 L23 94 L18 78 L10 62 L20 46 L13 30 L16 14 Z"/></clipPath>
+  </defs>
+  <style>
+    .script{font-family:'Segoe Script','Snell Roundhand','Apple Chancery','Lucida Handwriting','URW Chancery L',cursive}
+    .serif{font-family:'Palatino Linotype','Book Antiqua',Palatino,'URW Palladio L',Georgia,serif}
+    .name{font-size:82px;fill:#3b2a1a;stroke:#3b2a1a;stroke-width:1.1;stroke-linejoin:round;stroke-dasharray:900;stroke-dashoffset:0;
+      animation:draw 3.2s ease-in-out .3s both,ink 1.4s ease-in 2.3s both}
+    .flourish{fill:none;stroke:#8a6a3a;stroke-width:1.6;stroke-linecap:round;stroke-dasharray:260;stroke-dashoffset:0;animation:line 1.6s ease-out 3.2s both}
+    .gem{fill:#b0812f;animation:fade .6s ease-out 3.1s both}
+    .sub{font-size:20px;font-style:italic;fill:#5a3f24;animation:fade 1.2s ease-out 3.8s both}
+    .top{font-size:12px;letter-spacing:4px;fill:#8a6a3a;animation:fade 1.2s ease-out .2s both}
+    .rot{font-size:17px;fill:#7a1f1f;letter-spacing:.5px;opacity:0;animation:rot 16s linear infinite}
+    .r1{animation-delay:5s}.r2{animation-delay:9s}.r3{animation-delay:13s}.r4{animation-delay:17s}
+    @keyframes draw{from{stroke-dashoffset:900}to{stroke-dashoffset:0}}
+    @keyframes ink{from{fill-opacity:0}to{fill-opacity:1}}
+    @keyframes line{from{stroke-dashoffset:260}to{stroke-dashoffset:0}}
+    @keyframes fade{from{opacity:0}to{opacity:1}}
+    @keyframes rot{0%{opacity:0}4%{opacity:1}21%{opacity:1}25%{opacity:0}100%{opacity:0}}
+    @media (prefers-reduced-motion:reduce){*{animation:none!important}.r1{opacity:1}}
+  </style>
+  <path id="paper-shape" d="M16 14 L32 11 L48 17 L64 10 L80 16 L96 13 L112 19 L128 12 L144 15 L160 9 L176 16 L192 12 L208 18 L224 14 L240 11 L256 17 L272 10 L288 16 L304 13 L320 19 L336 12 L352 15 L368 9 L384 16 L400 12 L416 18 L432 14 L448 11 L464 17 L480 10 L496 16 L512 13 L528 19 L544 12 L560 15 L576 9 L592 16 L608 12 L624 18 L640 14 L656 11 L672 17 L688 10 L704 16 L720 13 L736 19 L752 12 L768 15 L784 14 L784 14 L781 30 L788 46 L778 62 L786 78 L791 94 L782 110 L789 126 L779 142 L785 158 L777 174 L787 190 L781 206 L788 222 L778 238 L786 254 L791 270 L782 286 L789 302 L779 318 L784 330 L16 330 L16 330 L11 318 L21 302 L14 286 L23 270 L18 254 L10 238 L20 222 L13 206 L19 190 L9 174 L17 158 L11 142 L21 126 L14 110 L23 94 L18 78 L10 62 L20 46 L13 30 L16 14 Z" fill="url(#pg)" filter="url(#paper)"/>
+  <g clip-path="url(#paper-clip)">
+    <path d="M16 14 L32 11 L48 17 L64 10 L80 16 L96 13 L112 19 L128 12 L144 15 L160 9 L176 16 L192 12 L208 18 L224 14 L240 11 L256 17 L272 10 L288 16 L304 13 L320 19 L336 12 L352 15 L368 9 L384 16 L400 12 L416 18 L432 14 L448 11 L464 17 L480 10 L496 16 L512 13 L528 19 L544 12 L560 15 L576 9 L592 16 L608 12 L624 18 L640 14 L656 11 L672 17 L688 10 L704 16 L720 13 L736 19 L752 12 L768 15 L784 14 L784 14 L781 30 L788 46 L778 62 L786 78 L791 94 L782 110 L789 126 L779 142 L785 158 L777 174 L787 190 L781 206 L788 222 L778 238 L786 254 L791 270 L782 286 L789 302 L779 318 L784 330 M16 14 L13 30 L20 46 L10 62 L18 78 L23 94 L14 110 L21 126 L11 142 L17 158 L9 174 L19 190 L13 206 L20 222 L10 238 L18 254 L23 270 L14 286 L21 302 L11 318 L16 330" fill="none" stroke="#6b3f14" stroke-opacity=".35" stroke-width="5" filter="url(#edge-burn)"/>
+  </g>
+
+
+  
+
+  <rect x="36" y="36" width="728" height="258" fill="none" stroke="#8a6a3a" stroke-opacity=".55"/>
+  <rect x="41" y="41" width="718" height="248" fill="none" stroke="#8a6a3a" stroke-opacity=".28"/>
+  <g fill="#8a6a3a" fill-opacity=".7">
+    <path d="M36 30l6 6-6 6-6-6z"/><path d="M764 30l6 6-6 6-6-6z"/>
+    <path d="M36 288l6 6-6 6-6-6z"/><path d="M764 288l6 6-6 6-6-6z"/>
+  </g>
+
+  <text class="serif top" x="400" y="78" text-anchor="middle">GITHUB.COM / BENTZ16</text>
+
+  <text class="script name" x="400" y="166" text-anchor="middle">Ali Erdem</text>
+
+  <path class="flourish" d="M388 196C350 196 322 186 284 196S236 206 228 194S242 182 248 192"/>
+  <path class="flourish" d="M412 196C450 196 478 186 516 196S564 206 572 194S558 182 552 192"/>
+  <path class="gem" d="M400 189l7 7-7 7-7-7z"/>
+
+  <text class="serif sub" x="400" y="234" text-anchor="middle">Co-founder of Karbonify  •  Full-Stack Developer</text>
+
+  <g class="serif" text-anchor="middle">
+    <text class="rot r1" x="400" y="268">Building software that makes sustainable habits measurable.</text>
+    <text class="rot r2" x="400" y="268">Co-founding and engineering Karbonify</text>
+    <text class="rot r3" x="400" y="268">PHP  •  JavaScript  •  MariaDB  •  Docker</text>
+    <text class="rot r4" x="400" y="268">Coding for one more breath tomorrow.</text>
+  </g>
+
+</svg>

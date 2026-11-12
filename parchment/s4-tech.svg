@@ -1,25 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" lang="en" xml:lang="en" viewBox="0 0 800 250" width="800" height="250" role="img" aria-label="Tech Stack: PHP, JavaScript, HTML, CSS, MySQL, Docker, Apache, Linux, Cloudflare, Git, GitHub">
+<svg xmlns="http://www.w3.org/2000/svg" lang="en" xml:lang="en" viewBox="0 0 800 310" width="800" height="310" role="img" aria-label="Tech Stack: PHP, JavaScript, HTML, CSS, MySQL, Docker, Apache, Linux, Cloudflare, Git, GitHub">
   <defs>
-    <linearGradient id="pg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#f4e7c6"/>
-      <stop offset=".55" stop-color="#ecdbb2"/>
-      <stop offset="1" stop-color="#e0c996"/>
+    <linearGradient id="pg" gradientUnits="userSpaceOnUse" x1="16" y1="0" x2="784" y2="0">
+      <stop offset="0" stop-color="#dcc592"/><stop offset=".07" stop-color="#e9d7ab"/><stop offset=".5" stop-color="#f0e2bd"/><stop offset=".93" stop-color="#e9d7ab"/><stop offset="1" stop-color="#dcc592"/>
     </linearGradient>
-    <radialGradient id="burn" cx=".5" cy=".5" r=".74">
-      <stop offset=".62" stop-color="#7a4f1e" stop-opacity="0"/>
-      <stop offset="1" stop-color="#6b3f14" stop-opacity=".42"/>
-    </radialGradient>
-    <filter id="paper" x="-5%" y="-12%" width="110%" height="124%" color-interpolation-filters="sRGB">
-      <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="3" seed="27" result="warp"/>
-      <feDisplacementMap in="SourceGraphic" in2="warp" scale="10" xChannelSelector="R" yChannelSelector="G" result="sheet"/>
-      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" seed="14" result="fine"/>
+    <filter id="paper" filterUnits="userSpaceOnUse" x="0" y="0" width="800" height="310" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency=".8" numOctaves="2" seed="9" result="fine"/>
       <feColorMatrix in="fine" type="matrix" values="0 0 0 0 0.36  0 0 0 0 0.25  0 0 0 0 0.12  0.9 0 0 0 -0.30" result="speck"/>
-      <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="2" seed="8" result="blot"/>
-      <feColorMatrix in="blot" type="matrix" values="0 0 0 0 0.48  0 0 0 0 0.30  0 0 0 0 0.10  0.85 0 0 0 -0.36" result="stain"/>
-      <feMerge result="tex"><feMergeNode in="stain"/><feMergeNode in="speck"/></feMerge>
-      <feComposite in="tex" in2="sheet" operator="in" result="texIn"/>
-      <feMerge><feMergeNode in="sheet"/><feMergeNode in="texIn"/></feMerge>
+      <feComposite in="speck" in2="SourceAlpha" operator="in" result="texIn"/>
+      <feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="texIn"/></feMerge>
     </filter>
+    <filter id="edge-burn" filterUnits="userSpaceOnUse" x="0" y="0" width="800" height="310"><feGaussianBlur stdDeviation="2.5"/></filter>
+    <clipPath id="paper-clip"><path d="M16 0 L12 16 L21 32 L14 48 L23 64 L11 80 L18 96 L9 112 L20 128 L13 144 L22 160 L15 176 L10 192 L19 208 L12 224 L23 240 L16 256 L9 272 L21 288 L16 310 L784 310 L783 296 L791 280 L778 264 L787 248 L782 232 L790 216 L779 200 L785 184 L777 168 L788 152 L780 136 L791 120 L786 104 L778 88 L788 72 L781 56 L760 58 L740 52 L714 55 L692 48 L665 51 L643 45 L617 47 L593 42 L570 43 L540 40 L572 38 L595 34 L618 35 L641 30 L665 32 L687 27 L710 29 L731 23 L754 25 L782 22 L789 16 L784 0  Z" fill-rule="evenodd" clip-rule="evenodd"/></clipPath>
   </defs>
   <style>
     .script{font-family:'Segoe Script','Snell Roundhand','Apple Chancery','Lucida Handwriting','URW Chancery L',cursive}
@@ -39,11 +30,12 @@
     @keyframes reink{0%,12%,100%{opacity:.86}6%{opacity:1;transform:scale(1.06)}}
     @media (prefers-reduced-motion:reduce){*{animation:none!important}}
   </style>
-
-  <g filter="url(#paper)">
-    <rect x="16" y="16" width="768" height="218" rx="5" fill="url(#pg)"/>
-    <rect x="16" y="16" width="768" height="218" rx="5" fill="url(#burn)"/>
+  <path id="paper-shape" d="M16 0 L12 16 L21 32 L14 48 L23 64 L11 80 L18 96 L9 112 L20 128 L13 144 L22 160 L15 176 L10 192 L19 208 L12 224 L23 240 L16 256 L9 272 L21 288 L16 310 L784 310 L783 296 L791 280 L778 264 L787 248 L782 232 L790 216 L779 200 L785 184 L777 168 L788 152 L780 136 L791 120 L786 104 L778 88 L788 72 L781 56 L760 58 L740 52 L714 55 L692 48 L665 51 L643 45 L617 47 L593 42 L570 43 L540 40 L572 38 L595 34 L618 35 L641 30 L665 32 L687 27 L710 29 L731 23 L754 25 L782 22 L789 16 L784 0  Z" fill-rule="evenodd" fill="url(#pg)" filter="url(#paper)"/>
+  <g clip-path="url(#paper-clip)">
+    <path d="M16 0 L12 16 L21 32 L14 48 L23 64 L11 80 L18 96 L9 112 L20 128 L13 144 L22 160 L15 176 L10 192 L19 208 L12 224 L23 240 L16 256 L9 272 L21 288 L16 310 M784 0 L789 16 L782 22 L754 25 L731 23 L710 29 L687 27 L665 32 L641 30 L618 35 L595 34 L572 38 L540 40 L570 43 L593 42 L617 47 L643 45 L665 51 L692 48 L714 55 L740 52 L760 58 L781 56 L788 72 L778 88 L786 104 L791 120 L780 136 L788 152 L777 168 L785 184 L779 200 L790 216 L782 232 L787 248 L778 264 L791 280 L783 296 L784 310" fill="none" stroke="#6b3f14" stroke-opacity=".35" stroke-width="5" filter="url(#edge-burn)"/>
+    <path d="M782 22 L754 25 L731 23 L710 29 L687 27 L665 32 L641 30 L618 35 L595 34 L572 38 L540 40 L570 43 L593 42 L617 47 L643 45 L665 51 L692 48 L714 55 L740 52 L760 58 L781 56" fill="none" stroke="#5a3413" stroke-opacity=".55" stroke-width="1.4"/>
   </g>
+  <g transform="translate(0,60)">
 
   <text class="script h" x="400" y="76" text-anchor="middle">Tech Stack</text>
   <path class="side" d="M250 64C210 58 170 70 110 64"/>
@@ -61,4 +53,5 @@
   <g transform="translate(411 182) rotate(1)"><g class="st b s9" opacity=".86"><rect x="-72" y="-19" width="144" height="38" rx="4" stroke-width="1.8"/><rect x="-68" y="-15" width="136" height="30" rx="2" stroke-width=".7"/><text y="6">CLOUDFLARE</text></g></g>
   <g transform="translate(530 182) rotate(-1.5)"><g class="st a s10" opacity=".86"><rect x="-33" y="-19" width="66" height="38" rx="4" stroke-width="1.8"/><rect x="-29" y="-15" width="58" height="30" rx="2" stroke-width=".7"/><text y="6">GIT</text></g></g>
   <g transform="translate(626.5 182) rotate(2)"><g class="st c s11" opacity=".86"><rect x="-49.500" y="-19" width="99" height="38" rx="4" stroke-width="1.8"/><rect x="-45.500" y="-15" width="91" height="30" rx="2" stroke-width=".7"/><text y="6">GITHUB</text></g></g>
+  </g>
 </svg>

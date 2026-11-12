@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 96" width="400" height="96" role="img" aria-label="Web: alierdem.dev">
+  <defs>
+    <linearGradient id="pg" gradientUnits="userSpaceOnUse" x1="16" y1="0" x2="784" y2="0">
+      <stop offset="0" stop-color="#dcc592"/><stop offset=".07" stop-color="#e9d7ab"/><stop offset=".5" stop-color="#f0e2bd"/><stop offset=".93" stop-color="#e9d7ab"/><stop offset="1" stop-color="#dcc592"/>
+    </linearGradient>
+    <filter id="paper" filterUnits="userSpaceOnUse" x="0" y="0" width="400" height="96" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency=".8" numOctaves="2" seed="9" result="fine"/>
+      <feColorMatrix in="fine" type="matrix" values="0 0 0 0 0.36  0 0 0 0 0.25  0 0 0 0 0.12  0.9 0 0 0 -0.30" result="speck"/>
+      <feComposite in="speck" in2="SourceAlpha" operator="in" result="texIn"/>
+      <feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="texIn"/></feMerge>
+    </filter>
+    <filter id="edge-burn" filterUnits="userSpaceOnUse" x="0" y="0" width="400" height="96"><feGaussianBlur stdDeviation="2.5"/></filter>
+    <clipPath id="paper-clip"><path d="M16 0 L13 16 L20 32 L10 48 L18 64 L23 80 L16 96 L400 96 L400 0 Z"/></clipPath>
+  </defs>
+  <style>
+    .serif{font-family:'Palatino Linotype','Book Antiqua',Palatino,'URW Palladio L',Georgia,serif}
+    .k{font-size:12px;letter-spacing:3px;fill:#7a1f1f;font-weight:bold}
+    .v{font-size:23px;fill:#3b2a1a;font-style:italic}
+    .u{fill:none;stroke:#b0812f;stroke-width:1.8;stroke-linecap:round;stroke-dasharray:170;stroke-dashoffset:0;animation:u 6s ease-in-out infinite}
+    @keyframes u{0%{stroke-dashoffset:170}30%,85%{stroke-dashoffset:0;opacity:1}100%{stroke-dashoffset:0;opacity:0}}
+    @media (prefers-reduced-motion:reduce){*{animation:none!important}}
+  </style>
+  <path id="paper-shape" d="M16 0 L13 16 L20 32 L10 48 L18 64 L23 80 L16 96 L400 96 L400 0 Z" fill="url(#pg)" filter="url(#paper)"/>
+  <g clip-path="url(#paper-clip)">
+    <path d="M16 0 L13 16 L20 32 L10 48 L18 64 L23 80 L16 96" fill="none" stroke="#6b3f14" stroke-opacity=".35" stroke-width="5" filter="url(#edge-burn)"/>
+  </g>
+  <g transform="translate(62,10)">
+  <g>
+    <rect x="10" y="10" width="280" height="56" rx="4" fill="#f4e7c6" fill-opacity=".55" stroke="#a8884f" stroke-width="1"/>
+  </g>
+  <circle cx="30" cy="38" r="5" fill="#2a1d12" fill-opacity=".75"/>
+  <circle cx="30" cy="38" r="8" fill="none" stroke="#8a6a3a" stroke-width="1.2"/>
+  <text class="serif k" x="52" y="34">WEB</text>
+  <text class="serif v" x="100" y="45">alierdem.dev</text>
+  <path class="u" d="M100 54C140 50 190 58 250 53"/>
+  </g>
+</svg>
