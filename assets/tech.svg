@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 250" width="800" height="250" role="img" aria-label="Tech Stack: PHP, JavaScript, HTML, CSS, MySQL, Docker, Apache, Linux, Cloudflare, Git, GitHub">
+  <defs>
+    <linearGradient id="pg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f4e7c6"/>
+      <stop offset=".55" stop-color="#ecdbb2"/>
+      <stop offset="1" stop-color="#e0c996"/>
+    </linearGradient>
+    <radialGradient id="burn" cx=".5" cy=".5" r=".74">
+      <stop offset=".62" stop-color="#7a4f1e" stop-opacity="0"/>
+      <stop offset="1" stop-color="#6b3f14" stop-opacity=".42"/>
+    </radialGradient>
+    <filter id="paper" x="-5%" y="-12%" width="110%" height="124%" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="3" seed="27" result="warp"/>
+      <feDisplacementMap in="SourceGraphic" in2="warp" scale="10" xChannelSelector="R" yChannelSelector="G" result="sheet"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" seed="14" result="fine"/>
+      <feColorMatrix in="fine" type="matrix" values="0 0 0 0 0.36  0 0 0 0 0.25  0 0 0 0 0.12  0.9 0 0 0 -0.30" result="speck"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="2" seed="8" result="blot"/>
+      <feColorMatrix in="blot" type="matrix" values="0 0 0 0 0.48  0 0 0 0 0.30  0 0 0 0 0.10  0.85 0 0 0 -0.36" result="stain"/>
+      <feMerge result="tex"><feMergeNode in="stain"/><feMergeNode in="speck"/></feMerge>
+      <feComposite in="tex" in2="sheet" operator="in" result="texIn"/>
+      <feMerge><feMergeNode in="sheet"/><feMergeNode in="texIn"/></feMerge>
+    </filter>
+  </defs>
+  <style>
+    .script{font-family:'Segoe Script','Snell Roundhand','Apple Chancery','Lucida Handwriting','URW Chancery L',cursive}
+    .h{font-size:38px;fill:#3b2a1a;stroke:#3b2a1a;stroke-width:.8;stroke-dasharray:500;stroke-dashoffset:0;animation:draw 2.4s ease-in-out .2s both,ink 1s ease-in 1.5s both}
+    .side{fill:none;stroke:#8a6a3a;stroke-width:1.5;stroke-linecap:round;stroke-dasharray:200;stroke-dashoffset:0;animation:line 1.4s ease-out 1.6s both}
+    .st{transform-box:fill-box;transform-origin:center;animation:stamp .4s cubic-bezier(.3,1.5,.5,1) both,reink 11s ease-in-out infinite}
+    .st rect{fill:none;stroke:currentColor}
+    .st text{font-family:'Courier New',Courier,'Liberation Mono',monospace;font-size:17px;font-weight:bold;letter-spacing:1px;fill:currentColor;text-anchor:middle}
+    .a{color:#3b2a1a}.b{color:#7a1f1f}.c{color:#4f6b3a}
+    .s1{animation-delay:2s,6s}.s2{animation-delay:2.15s,7s}.s3{animation-delay:2.3s,8s}.s4{animation-delay:2.45s,9s}
+    .s5{animation-delay:2.6s,10s}.s6{animation-delay:2.75s,11s}.s7{animation-delay:2.9s,12s}.s8{animation-delay:3.05s,13s}
+    .s9{animation-delay:3.2s,14s}.s10{animation-delay:3.35s,15s}.s11{animation-delay:3.5s,16s}
+    @keyframes draw{from{stroke-dashoffset:500}to{stroke-dashoffset:0}}
+    @keyframes ink{from{fill-opacity:0}to{fill-opacity:1}}
+    @keyframes line{from{stroke-dashoffset:200}to{stroke-dashoffset:0}}
+    @keyframes stamp{from{opacity:0;transform:scale(1.6)}to{opacity:.86;transform:scale(1)}}
+    @keyframes reink{0%,12%,100%{opacity:.86}6%{opacity:1;transform:scale(1.06)}}
+    @media (prefers-reduced-motion:reduce){*{animation:none!important}}
+  </style>
+
+  <g filter="url(#paper)">
+    <rect x="16" y="16" width="768" height="218" rx="5" fill="url(#pg)"/>
+    <rect x="16" y="16" width="768" height="218" rx="5" fill="url(#burn)"/>
+  </g>
+
+  <text class="script h" x="400" y="76" text-anchor="middle">Tech Stack</text>
+  <path class="side" d="M250 64C210 58 170 70 110 64"/>
+  <path class="side" d="M550 64C590 58 630 70 690 64"/>
+
+  <g transform="translate(128 124) rotate(-2)"><g class="st a s1" opacity=".86"><rect x="-33" y="-19" width="66" height="38" rx="4" stroke-width="1.8"/><rect x="-29" y="-15" width="58" height="30" rx="2" stroke-width=".7"/><text y="6">PHP</text></g></g>
+  <g transform="translate(247 124) rotate(1.5)"><g class="st b s2" opacity=".86"><rect x="-72" y="-19" width="144" height="38" rx="4" stroke-width="1.8"/><rect x="-68" y="-15" width="136" height="30" rx="2" stroke-width=".7"/><text y="6">JAVASCRIPT</text></g></g>
+  <g transform="translate(371.5 124) rotate(-1)"><g class="st a s3" opacity=".86"><rect x="-38.500" y="-19" width="77" height="38" rx="4" stroke-width="1.8"/><rect x="-34.500" y="-15" width="69" height="30" rx="2" stroke-width=".7"/><text y="6">HTML</text></g></g>
+  <g transform="translate(457 124) rotate(2)"><g class="st c s4" opacity=".86"><rect x="-33" y="-19" width="66" height="38" rx="4" stroke-width="1.8"/><rect x="-29" y="-15" width="58" height="30" rx="2" stroke-width=".7"/><text y="6">CSS</text></g></g>
+  <g transform="translate(548 124) rotate(-1.5)"><g class="st b s5" opacity=".86"><rect x="-44" y="-19" width="88" height="38" rx="4" stroke-width="1.8"/><rect x="-40" y="-15" width="80" height="30" rx="2" stroke-width=".7"/><text y="6">MYSQL</text></g></g>
+  <g transform="translate(655.5 124) rotate(1)"><g class="st a s6" opacity=".86"><rect x="-49.500" y="-19" width="99" height="38" rx="4" stroke-width="1.8"/><rect x="-45.500" y="-15" width="91" height="30" rx="2" stroke-width=".7"/><text y="6">DOCKER</text></g></g>
+
+  <g transform="translate(173.5 182) rotate(1.5)"><g class="st c s7" opacity=".86"><rect x="-49.500" y="-19" width="99" height="38" rx="4" stroke-width="1.8"/><rect x="-45.500" y="-15" width="91" height="30" rx="2" stroke-width=".7"/><text y="6">APACHE</text></g></g>
+  <g transform="translate(281 182) rotate(-2)"><g class="st a s8" opacity=".86"><rect x="-44" y="-19" width="88" height="38" rx="4" stroke-width="1.8"/><rect x="-40" y="-15" width="80" height="30" rx="2" stroke-width=".7"/><text y="6">LINUX</text></g></g>
+  <g transform="translate(411 182) rotate(1)"><g class="st b s9" opacity=".86"><rect x="-72" y="-19" width="144" height="38" rx="4" stroke-width="1.8"/><rect x="-68" y="-15" width="136" height="30" rx="2" stroke-width=".7"/><text y="6">CLOUDFLARE</text></g></g>
+  <g transform="translate(530 182) rotate(-1.5)"><g class="st a s10" opacity=".86"><rect x="-33" y="-19" width="66" height="38" rx="4" stroke-width="1.8"/><rect x="-29" y="-15" width="58" height="30" rx="2" stroke-width=".7"/><text y="6">GIT</text></g></g>
+  <g transform="translate(626.5 182) rotate(2)"><g class="st c s11" opacity=".86"><rect x="-49.500" y="-19" width="99" height="38" rx="4" stroke-width="1.8"/><rect x="-45.500" y="-15" width="91" height="30" rx="2" stroke-width=".7"/><text y="6">GITHUB</text></g></g>
+</svg>

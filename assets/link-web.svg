@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 76" width="300" height="76" role="img" aria-label="Web: alierdem.dev">
+  <defs>
+    <linearGradient id="pg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f4e7c6"/>
+      <stop offset="1" stop-color="#e0c996"/>
+    </linearGradient>
+    <filter id="paper" x="-6%" y="-20%" width="112%" height="140%" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="3" seed="41" result="warp"/>
+      <feDisplacementMap in="SourceGraphic" in2="warp" scale="7" xChannelSelector="R" yChannelSelector="G" result="sheet"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" seed="2" result="fine"/>
+      <feColorMatrix in="fine" type="matrix" values="0 0 0 0 0.36  0 0 0 0 0.25  0 0 0 0 0.12  0.9 0 0 0 -0.30" result="speck"/>
+      <feComposite in="speck" in2="sheet" operator="in" result="texIn"/>
+      <feMerge><feMergeNode in="sheet"/><feMergeNode in="texIn"/></feMerge>
+    </filter>
+  </defs>
+  <style>
+    .serif{font-family:'Palatino Linotype','Book Antiqua',Palatino,'URW Palladio L',Georgia,serif}
+    .k{font-size:12px;letter-spacing:3px;fill:#7a1f1f;font-weight:bold}
+    .v{font-size:23px;fill:#3b2a1a;font-style:italic}
+    .u{fill:none;stroke:#b0812f;stroke-width:1.8;stroke-linecap:round;stroke-dasharray:170;stroke-dashoffset:0;animation:u 6s ease-in-out infinite}
+    @keyframes u{0%{stroke-dashoffset:170}30%,85%{stroke-dashoffset:0;opacity:1}100%{stroke-dashoffset:0;opacity:0}}
+    @media (prefers-reduced-motion:reduce){*{animation:none!important}}
+  </style>
+  <g filter="url(#paper)">
+    <rect x="10" y="10" width="280" height="56" rx="4" fill="url(#pg)" stroke="#a8884f" stroke-width="1"/>
+  </g>
+  <circle cx="30" cy="38" r="5" fill="#2a1d12" fill-opacity=".75"/>
+  <circle cx="30" cy="38" r="8" fill="none" stroke="#8a6a3a" stroke-width="1.2"/>
+  <text class="serif k" x="52" y="34">WEB</text>
+  <text class="serif v" x="100" y="45">alierdem.dev</text>
+  <path class="u" d="M100 54C140 50 190 58 250 53"/>
+</svg>
